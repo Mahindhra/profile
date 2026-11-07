@@ -1,0 +1,117 @@
+/* ==========================================================================
+   LAYOUT & GRID SYSTEM
+   ========================================================================== */
+
+.site-wrapper {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+.section {
+  position: relative;
+  padding-top: var(--section-spacing);
+  padding-bottom: var(--section-spacing);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.section-flush-bottom {
+  padding-bottom: 0;
+}
+
+/* Background Engineering: Subtle Architectural Grid */
+.bg-grid-pattern {
+  position: relative;
+  background-image: 
+    linear-gradient(to right, var(--grid-line-color) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line-color) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+.bg-radial-glow {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 720px;
+  height: 520px;
+  background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Section Header Component */
+.section-header {
+  margin-bottom: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+.section-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.section-header-left {
+  max-width: 680px;
+}
+
+.section-header-meta {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--text-tertiary);
+  text-align: right;
+}
+
+/* Two-column Asymmetric Editorial Layout */
+.editorial-grid-2col {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: clamp(2.5rem, 6vw, 5rem);
+  align-items: start;
+}
+
+.editorial-grid-2col-reverse {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: clamp(2.5rem, 6vw, 5rem);
+  align-items: start;
+}
+
+/* Multi-column Grid Utilities */
+.grid-2col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.grid-3col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+}
+
+.grid-4col {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+/* Divider Lines */
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--border-subtle);
+  margin: 2.5rem 0;
+}

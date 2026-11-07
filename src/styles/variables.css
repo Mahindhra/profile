@@ -1,0 +1,106 @@
+:root {
+  /* ==========================================================================
+     LIGHT THEME (Default)
+     ========================================================================== */
+  --bg-primary: #F8F8F5;
+  --bg-surface: #FFFFFF;
+  --bg-surface-elevated: #FFFFFF;
+  --bg-muted: #F0F1F5;
+  --bg-card: #FFFFFF;
+  --bg-glass: rgba(255, 255, 255, 0.78);
+  --bg-glass-heavy: rgba(255, 255, 255, 0.92);
+
+  --text-primary: #17191C;
+  --text-secondary: #737780;
+  --text-tertiary: #9A9EA7;
+  --text-inverse: #FFFFFF;
+
+  --accent-blue: #315CFD;
+  --accent-dark: #203FB8;
+  --accent-light: #EEF2FF;
+  --accent-border: rgba(49, 92, 253, 0.25);
+  --accent-glow: rgba(49, 92, 253, 0.12);
+
+  --border-subtle: #E7E8EC;
+  --border-strong: #D2D5DC;
+  --border-focus: #315CFD;
+
+  --badge-bg: #EEF2FF;
+  --badge-text: #203FB8;
+  --badge-border: rgba(49, 92, 253, 0.18);
+
+  --code-bg: #EAECEF;
+  --code-text: #17191C;
+
+  /* Shadows - Minimal & controlled */
+  --shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.04);
+  --shadow-md: 0 4px 16px -2px rgba(16, 24, 40, 0.06), 0 2px 6px -1px rgba(16, 24, 40, 0.04);
+  --shadow-lg: 0 12px 32px -4px rgba(16, 24, 40, 0.08), 0 4px 12px -2px rgba(16, 24, 40, 0.04);
+  --shadow-floating: 0 20px 48px -8px rgba(16, 24, 40, 0.12), 0 1px 3px rgba(0, 0, 0, 0.05);
+
+  /* Typography Stacks */
+  --font-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Layout */
+  --container-max-width: 1200px;
+  --container-padding: clamp(1.25rem, 4vw, 3rem);
+  --section-spacing: clamp(4.5rem, 8vw, 8.5rem);
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-pill: 9999px;
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 250ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 400ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-spring: 500ms cubic-bezier(0.175, 0.885, 0.32, 1.15);
+
+  /* Grid lines overlay */
+  --grid-line-color: rgba(23, 25, 28, 0.04);
+}
+
+[data-theme="dark"] {
+  /* ==========================================================================
+     DARK THEME
+     ========================================================================== */
+  --bg-primary: #101114;
+  --bg-surface: #191B20;
+  --bg-surface-elevated: #21242B;
+  --bg-muted: #14161B;
+  --bg-card: #191B20;
+  --bg-glass: rgba(25, 27, 32, 0.82);
+  --bg-glass-heavy: rgba(16, 17, 20, 0.94);
+
+  --text-primary: #F7F7F5;
+  --text-secondary: #A0A4AE;
+  --text-tertiary: #6E727D;
+  --text-inverse: #101114;
+
+  --accent-blue: #7892FF;
+  --accent-dark: #5875F0;
+  --accent-light: rgba(120, 146, 255, 0.12);
+  --accent-border: rgba(120, 146, 255, 0.35);
+  --accent-glow: rgba(120, 146, 255, 0.15);
+
+  --border-subtle: #2C2F37;
+  --border-strong: #3B3F4A;
+  --border-focus: #7892FF;
+
+  --badge-bg: rgba(120, 146, 255, 0.12);
+  --badge-text: #A6B9FF;
+  --badge-border: rgba(120, 146, 255, 0.28);
+
+  --code-bg: #21242B;
+  --code-text: #F7F7F5;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px -2px rgba(0, 0, 0, 0.4), 0 2px 6px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 12px 32px -4px rgba(0, 0, 0, 0.5), 0 4px 12px -2px rgba(0, 0, 0, 0.35);
+  --shadow-floating: 0 20px 48px -8px rgba(0, 0, 0, 0.6), 0 1px 3px rgba(255, 255, 255, 0.05);
+
+  --grid-line-color: rgba(255, 255, 255, 0.035);
+}

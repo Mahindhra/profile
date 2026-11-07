@@ -1,0 +1,121 @@
+/* ==========================================================================
+   SWISS EDITORIAL TYPOGRAPHY SYSTEM
+   ========================================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  color: var(--text-primary);
+  text-wrap: balance;
+}
+
+/* Fluid Display Headings */
+.display-hero {
+  font-family: var(--font-heading);
+  font-size: clamp(2.8rem, 6.8vw, 6.2rem);
+  font-weight: 700;
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+  color: var(--text-primary);
+}
+
+.display-section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.035em;
+  color: var(--text-primary);
+}
+
+.display-h3 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.4rem, 2.4vw, 2rem);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.25;
+}
+
+.display-h4 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.15rem, 1.8vw, 1.45rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.35;
+}
+
+/* Editorial Eyebrow Labels */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-blue);
+  margin-bottom: 0.75rem;
+}
+
+.eyebrow-number {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  letter-spacing: 0.08em;
+}
+
+/* Paragraphs & Text Body */
+p {
+  color: var(--text-secondary);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  max-width: 65ch;
+}
+
+.lead-text {
+  font-size: clamp(1.125rem, 1.6vw, 1.35rem);
+  line-height: 1.65;
+  color: var(--text-secondary);
+}
+
+.text-editorial-statement {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 2.8vw, 2.5rem);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  color: var(--text-primary);
+}
+
+/* Monospace & Metadata */
+.text-mono {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  letter-spacing: -0.01em;
+}
+
+.text-meta {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--text-tertiary);
+  letter-spacing: 0.02em;
+}
+
+/* Inline emphasis & highlights */
+.highlight-blue {
+  color: var(--accent-blue);
+  position: relative;
+  display: inline-block;
+}
+
+.editorial-mark {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  vertical-align: super;
+  color: var(--accent-blue);
+  font-weight: 600;
+}
